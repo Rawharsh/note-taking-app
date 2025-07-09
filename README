@@ -1,0 +1,61 @@
+# 📝 Note-Taking App
+
+# A full-stack note-taking web app built with:
+
+# - 🖥️ Frontend: React.js
+# - ⚙️ Backend: Node.js + Express
+# - 🗃️ Database: MongoDB (Atlas)
+# - 🔐 Auth: JWT + OTP email verification (with Nodemailer)
+
+## 🚀 Features
+
+# - User signup with OTP email verification
+# - JWT-based login & protected dashboard
+# - Add, view, and delete personal notes
+# - Responsive layout (mobile & desktop)
+# - Logout and token handling
+# - Deployed-ready structure
+
+## 🔧 Project Structure
+
+# note-taking-app/
+# ├── client/ # React frontend
+# ├── server/ # Express backend
+# ├── .env # Environment variables
+# └── README.md
+
+
+## 📦 How to Run Locally
+
+### 1. Clone the repository
+
+# ```bash
+# git clone https://github.com/yourusername/note-taking-app.git
+# cd note-taking-app
+# 2. Backend setup
+
+# cd server
+# npm install
+# Add a .env file in the server folder with:
+
+# env
+# Copy
+# Edit
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_secret_key
+# EMAIL_USER=your_email@gmail.com
+# EMAIL_PASS=your_16_char_app_password
+
+
+# Then start the server:
+# npm run dev
+
+
+
+# 3. Frontend setup
+# bash
+# Copy
+# Edit
+# cd ../client
+# npm install
+# npm start
