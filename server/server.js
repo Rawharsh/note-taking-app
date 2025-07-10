@@ -8,7 +8,10 @@ const notesRoutes = require('./routes/notes');
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://note-taking-app-frontend-y21s.onrender.com', // 🔁 Replace with your frontend URL
+  credentials: true,
+}));
 app.use(express.json());
 app.use('/notes', notesRoutes);
 
